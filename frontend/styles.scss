@@ -2,10 +2,29 @@ $main-color: #724CF9;
 $main-shade: #564592;
 $background: #c8b8d8;
 $lightest: #f9f4f5;
+$brown: #776258;
 
 body {
   background: $background;
-  margin: 0 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button {
+  background: $main-color;
+  color: $lightest;
+  appearance: none;
+	border: none;
+  border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
 }
 
 .description {
@@ -15,20 +34,52 @@ body {
   border-radius: 5px;
 }
 
+.card {
+  filter: drop-shadow(.5rem .5rem 1rem black);
+}
+
 .card-back {
-  width: 70px;
-  height: 120px;
   background: $main-shade;
+  border-radius: 5px;
+  width: 140px;
+  height: 240px;
+  color: $main-shade;
+}
+
+.card-image {
+  height: 240px;
+  width: auto;
+}
+
+.spread {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background: $brown;
+  padding: 10%;
   border-radius: 5px;
 }
 
-.card {
-
-}
-
-#three-card-spread {
+.horizontal-spread {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
+  justify-content: center;
+}
+
+#sign-in {
+  float: right;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#authentication-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
 }

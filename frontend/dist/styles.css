@@ -15,7 +15,7 @@ button {
   cursor: pointer;
 }
 
-form {
+fieldset {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
@@ -37,6 +37,7 @@ form {
   border-radius: 5px;
   width: 140px;
   height: 240px;
+  color: #564592;
 }
 
 .card-image {
@@ -63,6 +64,18 @@ form {
 
 #sign-in {
   float: right;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#authentication-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
