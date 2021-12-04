@@ -13,7 +13,7 @@ const Signup = function () {
         const user = userCredential.user;
       })
       .catch((error) => {
-        const erorrCode = error.code;
+        const errorCode = error.code;
         const errorMessage = error.message;
       });
   };
