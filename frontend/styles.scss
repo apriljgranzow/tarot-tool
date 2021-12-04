@@ -1,8 +1,15 @@
+$main-color: #724CF9;
+$main-shade: #564592;
+
 .card-back {
   width: 70px;
   height: 120px;
-  background: #564592;
+  background: $main-shade;
   border-radius: 5px;
+}
+
+.card {
+
 }
 
 #three-card-spread {
@@ -10,5 +17,3 @@
   flex-direction: row;
   gap: 10px;
 }
-
-/*# sourceMappingURL=styles.css.map */
