@@ -1,6 +1,24 @@
 body {
   background: #c8b8d8;
-  margin: 0 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button {
+  background: #724CF9;
+  color: #f9f4f5;
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
 }
 
 .description {
@@ -10,18 +28,54 @@ body {
   border-radius: 5px;
 }
 
+.card {
+  filter: drop-shadow(0.5rem 0.5rem 1rem black);
+}
+
 .card-back {
-  width: 70px;
-  height: 120px;
   background: #564592;
+  border-radius: 5px;
+  width: 140px;
+  height: 240px;
+  color: #564592;
+}
+
+.card-image {
+  height: 240px;
+  width: auto;
+}
+
+.spread {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background: #776258;
+  padding: 10%;
   border-radius: 5px;
 }
 
-#three-card-spread {
+.horizontal-spread {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
+  justify-content: center;
+}
+
+#sign-in {
+  float: right;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#authentication-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,9 +4,9 @@ import Card from './Card';
 
 const Spread = function (props) {
   const { cards } = props;
-  const cardComponents = cards.map((card) => <Card name={card.name} id={card.value_int} />);
+  const cardComponents = cards.map((card) => <Card name={card.name} key={card.name} />);
   return (
-    <section id="three-card-spread">
+    <section className="spread horizontal-spread">
       {cardComponents}
     </section>
   );
