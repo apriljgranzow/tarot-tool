@@ -11,11 +11,11 @@ app.use(express.urlencoded({ extended: false }));
 const tarotApiUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards';
 
 app.get('/cards/random', (req, res) => {
-  const { n } = req.params;
+  const { n } = req.query;
   axios({
     method: 'get',
     url: `${tarotApiUrl}/random?n=${n}`,
-    responseType: 'json',
+    responseType: 'application/json',
   }).then((result) => res.send(result.data))
     .catch((err) => {
       console.error(err);
