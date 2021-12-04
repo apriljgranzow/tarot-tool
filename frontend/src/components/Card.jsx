@@ -1,13 +1,13 @@
 import React from 'react';
-import * as data from '../../../dataset/tarot-images.json';
+import imageMap from '../imageMap';
 
 const Card = function (props) {
   const { name } = props;
-
+  const fileName = imageMap.get(name);
   if (name === '') {
     return (<div className="card card-back">.</div>);
   }
-  return (<div className="card card-front"><p>{name}</p></div>);
+  return (<div className="card card-front"><img src={`/assets/cards/${fileName}`} alt={name} /></div>);
 };
 
 export default Card;
