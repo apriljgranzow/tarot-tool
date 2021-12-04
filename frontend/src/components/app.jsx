@@ -4,6 +4,10 @@ import Spread from './Spread';
 import Results from './Results';
 import Card from './Card';
 
+const themes = {
+  'Past Present Future': ['Past', 'Present', 'Future'],
+};
+
 const App = function () {
   const [isLoaded, setLoaded] = useState(false);
   const [cards, setCards] = useState([]);
@@ -26,7 +30,7 @@ const App = function () {
           <Card name="" />
         </section>
       )}
-      {isLoaded === true ? <Results cards={cards} /> : ''}
+      {isLoaded === true ? <Results cards={cards} themes={themes[spread]} /> : ''}
     </div>
   );
 };
